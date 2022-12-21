@@ -1,0 +1,1071 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ///////////..utility classes../////////// */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color:black;
+  background: yellow;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+}
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: palevioletred;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+  height: 80vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("images/istockphoto-922783734-170667a.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+
+
+/* ......//about us//...... */
+
+#about {
+    padding: 50px 0;
+    background: #f5f5f7;
+  }
+  
+  .about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #about h2 {
+    font-size: 2.3rem;
+  }
+  
+  #about p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+  }
+  
+  #about .small {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 600;
+  }
+  
+  .about-img {
+    flex: 1 1 400px;
+    padding: 20px;
+    transform: translateX(150%);
+    animation: about-img-animation 1s ease-in-out forwards;
+  }
+  
+  @keyframes about-img-animation {
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  .about-text {
+    flex: 1 1 400px;
+    
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150%);
+    animation: about-text-animation 1s ease-in-out forwards;
+  }
+  
+  @keyframes about-text-animation {
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  .about-img img {
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+  }
+
+
+  /*----fooditems----*/
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    overflow: hidden;
+}
+#menu{
+    background: whitesmoke;
+}
+.title{
+    padding: 0 30px;
+}
+#menu img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+.title p{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: green;
+    margin: 0;
+}
+.border{
+    width: 80px;
+    height: 4px;
+    margin: 3px 0;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background:green;
+}
+
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 12px 0;
+    color: rgb(128, 129, 129);
+    font-weight: 300;
+    
+}
+.menu-item a:hover{
+    background: rgb(250, 212, 218);
+}
+#food-items{
+    background: whitesmoke;
+    overflow: auto;
+    height: calc(100vh - 86px);
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    z-index: 1;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#header .address{
+    font-size: 20px;
+    
+}
+#map{
+    font-size: 25px;
+    color: gray;
+}
+.your-address{
+    border: 1px solid indianred;
+    color: gray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.add-box i{
+    font-size: 20px;
+}
+
+#header select{
+    width: 150px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background: none;
+    color: rosybrown;
+    padding: 0 5px;
+}
+.food-items{
+    display: none;
+}
+.cart-toggle{
+    display: block;
+}
+.util i,.user i{
+    font-size: 18px;
+    margin: 0 16px;
+    border: 1px solid green;
+    padding: 8px 16px;
+    color: green;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.util i:active{
+    color: white;
+    background: green;
+}
+#biryani,#paneer,#chicken,#vegetable,#chinese,#south-indian{
+    margin-top: 40px;   
+}
+#paneer #item-card,#vegetable #item-card{
+    background: rgb(218, 253, 188);
+}
+#chinese #item-card,#south-indian #item-card{
+    background: rgb(221, 243, 243);
+}
+#category-name,.item-menu{
+    margin: 10px;
+    font-size: 35px;   
+    color: coral;
+    font-family: 'Aclonica', sans-serif;
+}
+#item-card{
+    width: 180px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(253, 221, 226);
+    cursor: pointer;
+    transition: 0.5s all step-end;
+}
+#item-card:hover img{
+    transform: scale(1.2);
+}
+#card-top{
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+#rating{
+    padding: 7px;
+    color: goldenrod;
+    background: black;
+    font-size: 14px;
+    border-radius: 15px;
+}
+.fa-heart-o{
+    padding: 6px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+.toggle-heart{
+background: orangered;
+color: white; 
+}
+#item-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategray;
+    font-size: 18px;
+}
+#item-price{
+    margin: 0;
+    color: rgb(2, 27, 27);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.food-items{
+    display: none;
+}
+.cart-toggle{
+    display: none;
+}
+#cart-page{
+    background: white;
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#cart-title{
+    font-size: 35px;
+    margin: 0;
+    color: green;
+}
+#cart-page table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+#cart-page table thead td{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.cart-btn{
+    outline: none;
+    border: none;
+    background: green;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+#cart-page table tbody td{
+    padding: 10px 0;
+    font-size: 20px;
+}
+#cart-page table tbody button{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    background: green;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+#cart-page table tbody img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+#checkout{
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    background: white;
+    padding: 10px 20px;
+}
+#checkout p{
+    margin: 15px 0;
+    float: left;
+}
+#total-price,#total-item{
+    font-size: 25px;
+    color: indianred;
+}
+#delievery{
+    font-size: 20px;
+    color: limegreen;
+}
+#cart{
+    background: whitesmoke;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+
+.item-menu{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 40px;
+    color: indianred;
+    background: whitesmoke;
+    
+}
+.list-card{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.list-card:hover{
+    background: rgb(255, 216, 222);
+}
+.list-card:hover img{
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
+}
+.list-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.list-name{
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(94, 43, 43);
+}
+.taste-header{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+}
+#mobile-view{
+    display: none;
+}
+#biryani{
+    margin-top: 10px;
+}
+#m-total-amount{
+    display: none;
+}
+@media screen and (max-width : 800px) and (-webkit-min-device-pixel-ratio: 2){
+    .container{
+        display: none;
+    }
+    #mobile-view{
+        display: grid;
+        grid-template-rows: 120px 1fr 50px;
+        height: 100%;
+        overflow: hidden;
+        
+        width: 100vw;
+    }
+    .mobile-top{
+        padding: 5px 15px;
+        background: white;
+        z-index: 1;
+    }
+    .item-container{
+        overflow-y: scroll;
+    }
+    .logo-box,.top-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #logo{
+        width: 90px;
+        height: 70px;
+    }
+    .logo-box .your-address{
+        font-size: 18px;
+        width: 150px;
+        color: crimson;
+        text-transform: capitalize;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .top-menu{
+
+        color: indianred;
+    }
+    .top-menu i{
+        font-size: 20px;
+        cursor: pointer;
+        padding: 12px 5px ;
+        border-radius: 50%;
+    }
+    
+    .m-cart-toggle{
+        color: white;
+        background: lightcoral;
+    }
+    .category-header{
+        display: flex;
+        width: 100vw;
+        overflow-x: scroll;
+        position: sticky;
+        top: 0;
+        background: white;
+        z-index: 1;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        margin: 0;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+    }
+    .toggle-category{
+        display: none;
+        position: relative;
+    }
+    .list-card{
+        margin: 0 10px;
+        text-align: center;
+    }
+    .list-card img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .list-card:hover{
+        background: none;
+    }
+    .list-card:hover img{
+        transform: none;
+        transition: none;
+    }
+    .list-name{
+        margin: 5px 0;
+        color: green;
+        width: max-content;
+        font-size: 16px;
+    }
+    #food-items{        
+        padding: 5px 10px;
+    }
+
+    .mobile-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+        background: white;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+    .mobile-footer{
+        color: indianred;
+        text-transform: uppercase;
+        font-size: 16px;
+        position: static;
+    }
+    #category-name{
+        font-size: 25px;
+        font-family: 'Aclonica', sans-serif;
+    }
+    #item-card{
+        width: 150px;
+        height: 200px;
+    }
+    #item-card img{
+        width: 100px;
+        height: 100px;
+    }
+    #item-name,#item-price{
+        font-size: 16px;
+    }
+    .list-card{
+        flex-direction: column;
+    }
+    #cart-page{
+        margin: 3px 0;
+        padding: 10px 5px;
+        padding-bottom: 30px;
+        border-top: 1px solid rgb(219, 219, 219);
+    }
+    #cart-page table thead td{
+        font-size: 20px;
+    }
+    #cart-page table tbody td{
+        font-size: 18px;
+    }
+    #cart-page table tbody img{
+        width: 60px;
+        height: 60px;
+    }
+    #cart-title{
+        font-size: 25px;
+        display: inline-block;
+        font-family: 'Aclonica', sans-serif;
+    }
+    #m-total-amount{
+        display: inline-block;
+        color: lightcoral;
+        padding: 5px 10px;
+        margin: 0;
+        border:  1px solid lightcoral;
+        ;
+    }
+    .cart-btn{
+        font-size: 14px;
+        background: lightcoral;
+        padding: 8px 15px;
+        margin: auto;
+    }
+    .btn-box{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width : 400px) and (-webkit-min-device-pixel-ratio: 2){
+    #mobile-view{
+        min-height: -webkit-fill-available;
+    }
+    #item-card{
+        height: 200px;
+        width: 140px;
+    }
+    #food-items{
+        padding: 0;
+    }
+}
+
+
+
+/* ........./ Testimonial /.......... */
+
+#testimonials {
+    padding: 5rem 0;
+    background: rgba(243, 243, 243);
+  }
+  
+  .testimonial-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: #555;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+  
+  .testimonial-box .checked {
+    color: #ff9529;
+  }
+  
+  .testimonial-box .testimonial-text {
+    margin: 1rem 0;
+    color: #444;
+  }
+  
+  .testimonial-box {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .customer-photo img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+  
+
+
+
+  #contact {
+    padding: 5rem 0;
+    background: rgb(226, 226, 226);
+  }
+  
+  .contact-container {
+    display: flex;
+    background: #fff;
+  }
+  
+  .contact-img {
+    width: 50%;
+  }
+  
+  .contact-img img {
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+  
+  .form-container {
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .form-container input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1rem 0;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: #444;
+    font-weight: 500;
+  }
+  
+  .form-container textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #444;
+    outline: none;
+    padding: 1rem 0;
+    resize: none;
+  }
+  
+  .form-container h2 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+  }
+  
+  .form-container a {
+    font-size: 1.3rem;
+  }
+  
+  #footer h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2.6rem;
+    font-weight: 500;
+    color: #fff;
+    background: rgb(65, 65, 65);
+  }
+  
+  /* ......../ media query /.......... */
+  
+  @media (max-width: 768px) {
+    .navbar {
+      opacity: 0.95;
+    }
+  
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+      display: block;
+    }
+  
+    .navbar-container {
+      display: block;
+      position: relative;
+      height: 64px;
+    }
+  
+    .navbar-container input[type="checkbox"] {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 30px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+    }
+  
+    .navbar-container .hamburger-lines {
+      display: block;
+      height: 23px;
+      width: 35px;
+      position: absolute;
+      top: 17px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .navbar-container .hamburger-lines .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #333;
+    }
+  
+    .navbar-container .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar .menu-items {
+      padding-top: 100px;
+      background: #fff;
+      height: 100vh;
+      max-width: 300px;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 50px;
+      transition: transform 0.5s ease-in-out;
+      box-shadow: 5px 0px 10px 0px #aaa;
+    }
+  
+    .navbar .menu-items li {
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  
+    .logo {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      font-size: 2rem;
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(35deg);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-35deg);
+    }
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-img {
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: 06px;
+    right: 15px;
+    font-size: 3rem;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .img-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container .btn {
+    font-size: 0.7rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+}
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:orangered;
+  color: white;
+  padding: 14px 20px;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
